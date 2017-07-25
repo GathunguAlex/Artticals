@@ -1,0 +1,43 @@
+
+restaurants = [
+  {
+    "name": "McDonald's",
+    "reviews": [
+      {
+        "customer": {
+          "first_name": "karen",
+          "last_name": "louis"
+        },
+        "content": "The Baddest"
+      },
+      {
+        "customer": {
+          "first_name": "bob",
+          "last_name": "bobber"
+        },
+        "content": "Fry Me"
+      }
+    ]
+  },
+
+  {
+    "name": "Popeye's",
+    "reviews": [
+      {
+        "customer": {
+          "first_name": "karen",
+          "last_name": "louis"
+        },
+        "content": "MMMM!!"
+      },
+      {
+        "customer": {
+          "first_name": "bob",
+          "last_name": "bobber"
+        },
+        "content": "More spinach"
+      }
+    ]
+  }
+]
+restaurants
