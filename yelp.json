@@ -1,5 +1,4 @@
-
-restaurants = [
+[
   {
     "name": "McDonald's",
     "reviews": [
@@ -16,6 +15,13 @@ restaurants = [
           "last_name": "bobber"
         },
         "content": "Fry Me"
+      },
+      {
+        "customer": {
+          "first_name": "frank",
+          "last_name": "major"
+        },
+        "content": "What goodness"
       }
     ]
   },
@@ -40,4 +46,3 @@ restaurants = [
     ]
   }
 ]
-restaurants

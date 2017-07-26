@@ -50,6 +50,8 @@ Build out the following methods on the restaurant class
   + returns an array of all restaurants
 + Restaurant.find_or_create_by_name
   + should take a first and last name and return an instance of the customer, either found or created
++ Restaurant.most_popular
+  + should return the restaurant with the most reviews
 + Restaurant#reviews
   + returns an array of all reviews for that restaurant
 + Restaurant#customers

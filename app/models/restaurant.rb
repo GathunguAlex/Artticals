@@ -24,4 +24,18 @@ class Restaurant
     restaurant
   end
 
+  def reviews
+    Review.all.select {|review| review.restaurant == self }
+  end
+
+  def self.most_popular
+    counter_hash = {}
+    self.all.each do |rest|
+      counter_hash[rest] = rest.reviews.count
+    end
+    counter_hash.map do |key, value|
+      value == counter_hash.values.max ? return key
+    end
+  end
+
 end

@@ -13,10 +13,6 @@ class Customer
     self.class.all << self
   end
 
-  def full_name
-    "#{first_name} #{last_name}"
-  end
-
   def self.find_or_create_by_name(first_name, last_name)
     customer = ''
     if !self.all.empty?
@@ -29,14 +25,20 @@ class Customer
     end
   end
 
+  def find_all_by_first_name(first_name)
+    self.class.all.select do |customer|
+      customer.first_name == first_name
+    end    
+  end
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
+
+
   def add_review(restaurant, content)
     Review.new(restaurant, self, content)
   end
 
-  def reviews
-    Review.select do |review|
-      review.customer == self
-    end
-  end
 
 end
