@@ -13,7 +13,7 @@ class Adapter
     @restaurants = self.class.restaurants
   end
 
-  def createCustomers
+  def create_customers
     self.restaurants.each do |restaurant|
       restaurant["reviews"].each do |review|
         Customer.find_or_create_by_name(review["customer"]["first_name"], review["customer"]["last_name"])
@@ -21,13 +21,13 @@ class Adapter
     end
   end
 
-  def createRestaurants
+  def create_restaurants
     self.restaurants.each do |restaurant|
       Restaurant.find_or_create_by_name(restaurant["name"])
     end
   end
 
-  def createReviews
+  def create_reviews
     self.restaurants.each do |restaurant|
       restaurant["reviews"].each do |review|
         rest = Restaurant.find_or_create_by_name(restaurant["name"])
