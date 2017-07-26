@@ -6,7 +6,7 @@ class Adapter
 
   def self.restaurants
     json = File.read('yelp.json')
-    data = JSON.parse(json)
+    JSON.parse(json)
   end
 
   def initialize
