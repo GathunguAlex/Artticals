@@ -1,9 +1,8 @@
 # Object Relations Assessment
 
-For this assignment, we'll be working with a Yelp-style domain. We have three models - Restaurant, Customer, and Review. For our purposes, a Restaurant has many reviews, a Customer has many reviews, and Restaurant - Customer is a many to many relationship. We have the data that we'll turn into instances of those models in the yelp.json file, and then write the methods we want to call on those.
+For this assignment, we're going to be working to help New Yorker Magazine organize its articles and contributors into categories for their new website. An article will belong to a contributor and can have more than one category. Contributor writes for various Categories via his/her articles, and by the same token a Category can host many contributors.
 
-If you are not sketching out your domain, and thinking about single source of truth,
-you are doing it wrong :(
+Make sure to draw up the domain model before beginning. Consider that you may need to include more models to make the domain viable.
 
 ## Topics
 
@@ -22,37 +21,27 @@ We've provided you with a console that you can use to test your code. To enter a
 **To Submit** - once you've completed all the deliverables, please copy/paste your three class definitions into the `solution.rb` file. Please don't submit the lab until we give you the signal.
 
 ## Deliverables
-Parse JSON
-Use the Adapter class to parse through the data in the JSON file and turn it into models. Be careful not to duplicate your instances of each.
+The below are the methods that must be present on your models. Feel free to build out any helper methods to use in these, but complete in the following order:
+1. Build the basic initialization methods on the Contributor, Article and Category classes needed to instantiate objects for each.
+2. Build out the Adapter to parse through the data and create the Contributor, Article, and Category objects. Be careful that you don't duplicate instances of any class.
+3. Build methods for the Category class, then complete methods for Contributor and Article.
 
-Build the following methods on the customer class
-+ Customer.all
-  + should return all of the customers
-+ Customer.find_or_create_by_name
-  + should take a first and last name and return an instance of the customer, either found or created
-+ Customer.find_all_by_first_name(name)
-  + given a string of a first name, returns an array containing all customers with that first name
-+ Customer#add_review(restaurant, content)
-  + given some content and a restaurant, creates a new review and associates it with that customer and that restaurant
+Adapter:
+- Use the Adapter class to parse through the data in the JSON file and turn it into models.
+- Be careful not to duplicate your instances of each.
 
-Build out the following methods on the Review class
+Category:
+- Category.find_or_create_by_name
+- Category.most_articles
+  + Returns category with the most articles associated with it
+- Category#contributors_in_order
+  + Array of contributors from category in order of number of articles in category they've written from least to most
 
-+ Review.all
-  + returns all of the reviews
-+ Review#customer
-  + returns the customer for that given review
-+ Review#restaurant
-  + returns the restaurant for that given review
+Contributor:
+- Contributor.find_or_create_by_name
+- Contributor#categories
+  + Returns all categories this contributor has written articles for
 
-Build out the following methods on the restaurant class
-
-+ Restaurant.all
-  + returns an array of all restaurants
-+ Restaurant.find_or_create_by_name
-  + should take a first and last name and return an instance of the customer, either found or created
-+ Restaurant.most_popular
-  + should return the restaurant with the most reviews
-+ Restaurant#reviews
-  + returns an array of all reviews for that restaurant
-+ Restaurant#customers
-  + should return all of the customers who have written reviews of that restaurant.
+Article:
+- Article.find_all_by_category
+  + Takes a category and returns all articles associated with it
