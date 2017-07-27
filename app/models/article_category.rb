@@ -25,4 +25,5 @@ class ArticleCategory
     art_cat
   end
 
+
 end

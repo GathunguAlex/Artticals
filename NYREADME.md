@@ -32,26 +32,16 @@ Adapter:
 
 Category:
 - Category.find_or_create_by_name
-- Category.list_all_category_names
 - Category.most_articles
-+ Returns category with the most articles associated with it
+  + Returns category with the most articles associated with it
 - Category#contributors_in_order
-+ Lists all contributors associated with category in order of how many articles of this category they've written
+  + Array of contributors from category in order of number of articles in category they've written from least to most
 
 Contributor:
 - Contributor.find_or_create_by_name
 - Contributor#categories
-- Contributor#first_name
-- Contributor#write_article
-  + Takes article attributes and creates a new instance, associating with contributor
+  + Returns all categories this contributor has written articles for
 
 Article:
-- Article.list_all_titles
 - Article.find_all_by_category
   + Takes a category and returns all articles associated with it
-- Article#change_categories
-  + Takes one or more categories and associates them with article
-
-
-
-**** Dictate the order they should do things in.

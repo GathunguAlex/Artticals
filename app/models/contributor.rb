@@ -24,4 +24,14 @@ class Contributor
       end
       contributor
     end
+
+    def articles
+      Article.all.select { |article| article.contributor == self }
+    end
+
+    def categories
+      art_cats = ArticleCategory.all.select { |art_cat| self.articles.include?(art_cat.article) }
+      art_cats.map(&:category).uniq
+    end
+
 end

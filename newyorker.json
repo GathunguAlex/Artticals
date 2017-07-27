@@ -1,6 +1,6 @@
 [
   {
-  "contributor": "Tristan Greene",
+  "contributor": "Aya Greene",
   "title": "Facebook teams with Harvard to defend democracy from hackers",
   "description": "Facebook announced today it would fund a project called Defending Digital Democracy. The project, co-founded by the campaign managers for both Hillary Clinton and Mitt Romney, aims ...",
   "url": "https://thenextweb.com/facebook/2017/07/26/facebook-teams-with-harvard-to-defend-democracy-from-hackers/",
@@ -16,15 +16,15 @@
   "category": "Technology"
   },
   {
-  "contributor": "Tristan Greene",
+  "contributor": "Aya Greene",
   "title": "Teaching the Google Generation",
   "description": "A few years ago I was lucky enough to attend a conference that was hosted at Google’s offices in Mountain View. At one point we were led on a tour of the major buildings.  In the ...",
   "url": "https://thenextweb.com/contributors/2017/07/26/teaching-google-generation/",
   "publishedAt": "2017-07-26T19:05:36Z",
-  "category": "Technology, Culture"
+  "category": "Technology, Culture, Business"
   },
   {
-  "contributor": "Napier Lopez",
+  "contributor": "Aya Greene",
   "title": "Google just killed off one of its biggest features – and you won’t even notice",
   "description": "Google Search just killed off Instant, one of the most unique features of its search engine - and one you probably never really used.\r\n\r\nFor those not familiar with the nomenclature, ...",
   "url": "https://thenextweb.com/google/2017/07/26/google-just-killed-off-one-biggest-features-wont-even-notice/",
@@ -32,7 +32,7 @@
   "category": "Technology"
   },
   {
-  "contributor": "George Beall",
+  "contributor": "Napier Lopez",
   "title": "Why this wedding industry disruptor is taking a personalized approach to customer service",
   "description": "If you’re married or have ever been part of a wedding-planning process, you know that the lead-up to the walk down the aisle is equal parts exciting and stressful. Couples, and their ...",
   "url": "https://thenextweb.com/contributors/2017/07/26/wedding-industry-disruptor-taking-personalized-approach-customer-service/",
@@ -45,10 +45,10 @@
   "description": "Is your lackadaisical Netflix and Chill routine preventing you from keeping an active and healthy lifestyle? Then the Cycflix might be what you need.\r\n\r\nDeveloped by engineering student ...",
   "url": "https://thenextweb.com/shareables/2017/07/26/netflix-cross-trainer-tv-workout/",
   "publishedAt": "2017-07-26T13:52:51Z",
-  "category": "Health, Technology"
+  "category": "Health, Technology, Culture"
   },
   {
-  "contributor": "Napier Lopez",
+  "contributor": "Abhimanyu Ghoshal",
   "title": "Canada revokes Helmut Oberlander's citizenship for the fourth time",
   "description": "Canada says it does not take revocation lightly but it is necessary in cases of fraud.",
   "url": "http://www.bbc.co.uk/news/world-us-canada-40719927",
@@ -56,7 +56,7 @@
   "category": "World, Politics"
   },
   {
-  "contributor": "Abhimanyu Ghoshal",
+  "contributor": "Napier Lopez",
   "title": "Reality Check: Is Trump right that US has highest taxes?",
   "description": "Reality Check examines Donald Trump's claim that the US has the highest taxes in the world.",
   "url": "http://www.bbc.co.uk/news/world-us-canada-40728560",
@@ -72,7 +72,7 @@
   "category": "Weird, Culture, USA"
   },
   {
-  "contributor": "Anna Hartford",
+  "contributor": "Abhimanyu Ghoshal",
   "title": "Canada's Supreme Court halts seismic testing near Inuit hamlet",
   "description": "The highest court ruled that the community was not adequately consulted on the oil and gas project.",
   "url": "http://www.bbc.co.uk/news/world-us-canada-40677578",
@@ -85,6 +85,6 @@
   "description": "Divorces often break a heart or two - but in this case, an extra 54 violins were left in tatters.",
   "url": "http://www.bbc.co.uk/news/world-asia-40724397",
   "publishedAt": "2017-07-26T08:22:25Z",
-  "category": "Weird, Relationships"
+  "category": "Weird, Relationships, World"
   }
 ]
