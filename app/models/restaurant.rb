@@ -34,7 +34,7 @@ class Restaurant
       counter_hash[rest] = rest.reviews.count
     end
     counter_hash.map do |key, value|
-      value == counter_hash.values.max ? return key
+      value == counter_hash.values.max ? key : nil
     end
   end
 
