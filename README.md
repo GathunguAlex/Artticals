@@ -26,7 +26,7 @@ We've provided you with a console that you can use to test your code. To enter a
 ## Deliverables
 The below are the methods that must be present on your models. Feel free to build out any helper methods to use in these, but complete in the following order:
 
-1. Build the basic initialization methods on the Contributor, Article, Category, and ArticleCategories classes needed to instantiate objects for each. Look at the given files to see what attributes each class has.
+1. Build the basic initialization methods on the Contributor, Article, Category, and ArticleCategories classes needed to instantiate objects for each. Look at the newyorker.json file to see what attributes an article will have.
 
 Category:
 - Category#articles
