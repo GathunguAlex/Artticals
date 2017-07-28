@@ -50,6 +50,12 @@ Contributor:
 Article:
 - Article.find_all_by_category(category)
   + Takes a category and returns all articles associated with it
+
+ArticleCategory
+- ArticleCategory#article
+ + Returns the associated article instance
+- ArticleCategory#category
+  + Returns the associated category instance
   
 BONUS:
 Adapter:
