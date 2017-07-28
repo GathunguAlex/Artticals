@@ -1,8 +1,11 @@
 # Object Relations Assessment
 
-For this assignment, we're going to be working to help New Yorker Magazine organize its articles and contributors into categories for their new website. An article will belong to a contributor and can have more than one category. Contributor writes for various Categories via his/her articles, and by the same token a Category can host many contributors.
+For this assignment, we're going to be working to help New Yorker Magazine organize its articles and contributors into categories for their new website. 
+- An article will belong to a contributor and a contributor can have many articles
+- An article can have many categories and a category can have many articles. This means you will need an ArticleCategories Model that associates the two instances.
+- Contributor writes for various Categories via his/her articles, and by the same token a Category can host many contributors.
 
-Make sure to draw up the domain model before beginning. Consider that you may need to include more models to make the domain viable.
+Make sure to draw up the domain model before beginning. 
 
 ## Topics
 
@@ -22,26 +25,34 @@ We've provided you with a console that you can use to test your code. To enter a
 
 ## Deliverables
 The below are the methods that must be present on your models. Feel free to build out any helper methods to use in these, but complete in the following order:
-1. Build the basic initialization methods on the Contributor, Article and Category classes needed to instantiate objects for each.
-2. Build out the Adapter to parse through the data and create the Contributor, Article, and Category objects. Be careful that you don't duplicate instances of any class.
-3. Build methods for the Category class, then complete methods for Contributor and Article.
+1. Build the basic initialization methods on the Contributor, Article and Category classes needed to instantiate objects for each. Look at the given files to see what attributes each class has
+2. Build methods for the Category class, then complete methods for Contributor and Article.
 
-Adapter:
-- Use the Adapter class to parse through the data in the JSON file and turn it into models.
-- Be careful not to duplicate your instances of each.
 
 Category:
-- Category.find_or_create_by_name
+- Category#articles
+  + Returns an Array of Article instances associated with this category
+- Category#contributors
+  + Returns an Array of Contributor instances
+- Category.find_or_create_by_name(name)
+   + If a category  with this name exists, this method returns it. Otherwise, it creates the new category instance
 - Category.most_articles
   + Returns category with the most articles associated with it
-- Category#contributors_in_order
-  + Array of contributors from category in order of number of articles in category they've written from least to most
 
 Contributor:
-- Contributor.find_or_create_by_name
+- Contributor.find_or_create_by_name(name)
+  + If a contributor  with this name exists, this method returns it. Otherwise, it creates the new contributor instance
+- Contributor#articles
+  + Returns all the articles the contributor has written
 - Contributor#categories
   + Returns all categories this contributor has written articles for
 
 Article:
-- Article.find_all_by_category
+- Article.find_all_by_category(category)
   + Takes a category and returns all articles associated with it
+  
+BONUS:
+Adapter:
+- The idea of an Adapter class is that it's responsibility is to take data in one format and translate it to another format that is easier for the programmer to work with.  Here, the job of our adpater class is to read in data from the given `newyorker.json` file and use that to create Ruby instances with their associations.
+- If you have time use the code given on the Adapter class to finish the implementation of the `#create_objects` method.  It should iterate over the files stored in `@articles` and build the associated objects.
+- Be careful not to duplicate your instances of each.
