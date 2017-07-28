@@ -24,19 +24,17 @@ We've provided you with a console that you can use to test your code. To enter a
 **To Submit** - once you've completed all the deliverables, please copy/paste your three class definitions into the `solution.rb` file. Please don't submit the lab until we give you the signal.
 
 ## Deliverables
-The below are the methods that must be present on your models. Feel free to build out any helper methods to use in these, but complete in the following order:
+The below are the methods that must be present on your models. Feel free to build out any helper methods, if needed.
 
-1. Build the basic initialization methods on the Contributor, Article, Category, and ArticleCategories classes needed to instantiate objects for each. Look at the newyorker.json file to see what attributes an article will have.
+**First:** Build the basic initialization methods on the Contributor, Article, Category, and ArticleCategories classes needed to instantiate objects for each. Look at the newyorker.json file to see what attributes an article will have.  Then begin building out the methods listed below.  You may have to jump around a bit in the order that you build them.
 
 Category:
 - Category#all
   + Class level method that returns all Category instances. When a category instance is initialized, it should be added to the collection of all Category instances. 
-- Category#articles
-  + Returns an Array of Article instances associated with this category
-- Category#contributors
-  + Returns an Array of Contributor instances
 - Category.find_or_create_by_name(name)
    + If a category  with this name exists, this method returns it. Otherwise, it creates the new category instance
+- Category#articles
+  + Returns an Array of Article instances associated with this category
 - Category.most_articles
   + Returns category with the most articles associated with it
 
@@ -54,7 +52,7 @@ Article:
 - Article#all
   + Class level method that returns all Article instances. When an article instance is initialized, it should be added to the collection of all Article instances.
 - Article.find_all_by_category(category)
-  + Takes a category and returns all articles associated with it
+  + Takes a category instance as an argument, and returns all articles associated with it
 
 ArticleCategories
 - ArticleCategories#all
