@@ -26,7 +26,8 @@ We've provided you with a console that you can use to test your code. To enter a
 ## Deliverables
 The below are the methods that must be present on your models. Feel free to build out any helper methods, if needed.
 
-**First:** Build the basic initialization methods on the Contributor, Article, Category, and ArticleCategories classes needed to instantiate objects for each. Look at the newyorker.json file to see what attributes an article will have.  Then begin building out the methods listed below.  You may have to jump around a bit in the order that you build them.
+#### How to Approach
+**First: Build the basic initialization methods on the Contributor, Article, Category, and ArticleCategories classes needed to instantiate objects for each. Look at the newyorker.json file to see what attributes an article will have.  Then begin building out the methods listed below.  You may have to jump around a bit in the order that you build them.**
 
 Category:
 - Category#all
@@ -58,7 +59,7 @@ ArticleCategories
 - ArticleCategories#all
   + Class level method that returns all ArticleCategories instances. When an ArticleCategories instance is initialized, it should be added to the collection of all ArticleCategories instances.
 - ArticleCategory#article
- + Returns the associated article instance
+  + Returns the associated article instance
 - ArticleCategory#category
   + Returns the associated category instance
   
