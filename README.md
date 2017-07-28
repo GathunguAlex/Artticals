@@ -1,9 +1,9 @@
 # Object Relations Assessment
 
 For this assignment, we're going to be working to help New Yorker Magazine organize its articles and contributors into categories for their new website. 
-- An article will belong to a contributor and a contributor can have many articles
-- An article can have many categories and a category can have many articles. This means you will need an ArticleCategories Model that associates the two instances.
-- Contributor writes for various Categories via his/her articles, and by the same token a Category can host many contributors.
+- An article will belong to a contributor and a contributor can have many articles.  This is a has-many relationship.
+- An article can have many categories and a category can have many articles. This means you will need an ArticleCategories Model that associates an instance of the Article class with an instance of the Category class. This is a many-to-many relationship.
+- A contributor should be able to access the categories of his/her articles.
 
 Make sure to draw up the domain model before beginning. 
 
@@ -25,9 +25,8 @@ We've provided you with a console that you can use to test your code. To enter a
 
 ## Deliverables
 The below are the methods that must be present on your models. Feel free to build out any helper methods to use in these, but complete in the following order:
-1. Build the basic initialization methods on the Contributor, Article and Category classes needed to instantiate objects for each. Look at the given files to see what attributes each class has
-2. Build methods for the Category class, then complete methods for Contributor and Article.
 
+1. Build the basic initialization methods on the Contributor, Article, Category, and ArticleCategories classes needed to instantiate objects for each. Look at the given files to see what attributes each class has.
 
 Category:
 - Category#articles
