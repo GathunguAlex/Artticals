@@ -29,6 +29,8 @@ The below are the methods that must be present on your models. Feel free to buil
 1. Build the basic initialization methods on the Contributor, Article, Category, and ArticleCategories classes needed to instantiate objects for each. Look at the newyorker.json file to see what attributes an article will have.
 
 Category:
+- Category#all
+  + Class level method that returns all Category instances. When a category instance is initialized, it should be added to the collection of all Category instances. 
 - Category#articles
   + Returns an Array of Article instances associated with this category
 - Category#contributors
@@ -39,6 +41,8 @@ Category:
   + Returns category with the most articles associated with it
 
 Contributor:
+- Contributor#all
+  + Class level method that returns all Contributor instances. When a contributor instance is initialized, it should be added to the collection of all Contributor instances.
 - Contributor.find_or_create_by_name(name)
   + If a contributor  with this name exists, this method returns it. Otherwise, it creates the new contributor instance
 - Contributor#articles
@@ -47,10 +51,14 @@ Contributor:
   + Returns all categories this contributor has written articles for
 
 Article:
+- Article#all
+  + Class level method that returns all Article instances. When an article instance is initialized, it should be added to the collection of all Article instances.
 - Article.find_all_by_category(category)
   + Takes a category and returns all articles associated with it
 
-ArticleCategory
+ArticleCategories
+- ArticleCategories#all
+  + Class level method that returns all ArticleCategories instances. When an ArticleCategories instance is initialized, it should be added to the collection of all ArticleCategories instances.
 - ArticleCategory#article
  + Returns the associated article instance
 - ArticleCategory#category
