@@ -1,11 +1,11 @@
 # Object Relations Assessment
 
-For this assignment, we're going to be working to help New Yorker Magazine organize its articles and contributors into categories for their new website. 
+For this assignment, we're going to be working to help New Yorker Magazine organize its articles and contributors into categories for their new website.
 - An article will belong to a contributor and a contributor can have many articles.  This is a has-many relationship.
 - An article can have many categories and a category can have many articles. This means you will need an ArticleCategories Model that associates an instance of the Article class with an instance of the Category class. This is a many-to-many relationship.
 - A contributor should be able to access the categories of his/her articles.
 
-Make sure to draw up the domain model before beginning. 
+Make sure to draw up the domain model before beginning.
 
 ## Topics
 
@@ -31,23 +31,17 @@ The below are the methods that must be present on your models. Feel free to buil
 
 Category:
 - Category#all
-  + Class level method that returns all Category instances. When a category instance is initialized, it should be added to the collection of all Category instances. 
+  + Class level method that returns all Category instances. When a category instance is initialized, it should be added to the collection of all Category instances.
 - Category.find_or_create_by_name(name)
    + If a category  with this name exists, this method returns it. Otherwise, it creates the new category instance
 - Category#articles
   + Returns an Array of Article instances associated with this category
-- Category.most_articles
-  + Returns category with the most articles associated with it
 
 Contributor:
 - Contributor#all
   + Class level method that returns all Contributor instances. When a contributor instance is initialized, it should be added to the collection of all Contributor instances.
 - Contributor.find_or_create_by_name(name)
   + If a contributor  with this name exists, this method returns it. Otherwise, it creates the new contributor instance
-- Contributor#articles
-  + Returns all the articles the contributor has written
-- Contributor#categories
-  + Returns all categories this contributor has written articles for
 
 Article:
 - Article#all
@@ -62,9 +56,14 @@ ArticleCategories
   + Returns the associated article instance
 - ArticleCategory#category
   + Returns the associated category instance
-  
+
 BONUS:
 Adapter:
 - The idea of an Adapter class is that it's responsibility is to take data in one format and translate it to another format that is easier for the programmer to work with.  Here, the job of our adpater class is to read in data from the given `newyorker.json` file and use that to create Ruby instances with their associations.
 - If you have time use the code given on the Adapter class to finish the implementation of the `#create_objects` method.  It should iterate over the files stored in `@articles` and build the associated objects.
 - Be careful not to duplicate your instances of each.
+
+1. Domain modeling
+2. Create classes
+3. Use adapter to parse json
+4. class and instance methods
