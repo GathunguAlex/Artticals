@@ -3,6 +3,7 @@ GEM
   specs:
     byebug (8.2.2)
     coderay (1.1.1)
+    json (1.8.3)
     method_source (0.8.2)
     pry (0.10.3)
       coderay (~> 1.1.0)
@@ -18,8 +19,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  json
   pry-byebug
   require_all
 
 BUNDLED WITH
-   1.10.6
+   1.15.1

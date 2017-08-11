@@ -5,8 +5,8 @@
   "description": "Facebook announced today it would fund a project called Defending Digital Democracy. The project, co-founded by the campaign managers for both Hillary Clinton and Mitt Romney, aims ...",
   "url": "https://thenextweb.com/facebook/2017/07/26/facebook-teams-with-harvard-to-defend-democracy-from-hackers/",
   "publishedAt": "2017-07-26T20:08:07Z",
-  "category": "Technology, USA, Politics"
-  },
+  "category": "Technology"
+},
   {
   "contributor": "Owen Williams",
   "title": "Windows 95 running natively in your browser is a sight to behold",
@@ -21,7 +21,7 @@
   "description": "A few years ago I was lucky enough to attend a conference that was hosted at Google’s offices in Mountain View. At one point we were led on a tour of the major buildings.  In the ...",
   "url": "https://thenextweb.com/contributors/2017/07/26/teaching-google-generation/",
   "publishedAt": "2017-07-26T19:05:36Z",
-  "category": "Technology, Culture, Business"
+  "category": "Business"
   },
   {
   "contributor": "Aya Greene",
@@ -37,7 +37,7 @@
   "description": "If you’re married or have ever been part of a wedding-planning process, you know that the lead-up to the walk down the aisle is equal parts exciting and stressful. Couples, and their ...",
   "url": "https://thenextweb.com/contributors/2017/07/26/wedding-industry-disruptor-taking-personalized-approach-customer-service/",
   "publishedAt": "2017-07-26T17:40:11Z",
-  "category": "Business, Culture, Relationships"
+  "category": "Business"
   },
   {
   "contributor": "Abhimanyu Ghoshal",
@@ -45,7 +45,7 @@
   "description": "Is your lackadaisical Netflix and Chill routine preventing you from keeping an active and healthy lifestyle? Then the Cycflix might be what you need.\r\n\r\nDeveloped by engineering student ...",
   "url": "https://thenextweb.com/shareables/2017/07/26/netflix-cross-trainer-tv-workout/",
   "publishedAt": "2017-07-26T13:52:51Z",
-  "category": "Health, Technology, Culture"
+  "category": "Health"
   },
   {
   "contributor": "Abhimanyu Ghoshal",
@@ -53,7 +53,7 @@
   "description": "Canada says it does not take revocation lightly but it is necessary in cases of fraud.",
   "url": "http://www.bbc.co.uk/news/world-us-canada-40719927",
   "publishedAt": "2017-07-26T16:33:43Z",
-  "category": "World, Politics"
+  "category": "World"
   },
   {
   "contributor": "Napier Lopez",
@@ -61,7 +61,7 @@
   "description": "Reality Check examines Donald Trump's claim that the US has the highest taxes in the world.",
   "url": "http://www.bbc.co.uk/news/world-us-canada-40728560",
   "publishedAt": "2017-07-26T14:48:16Z",
-  "category": "USA, Politics, Business"
+  "category": "Politics"
   },
   {
   "contributor": "Abhimanyu Ghoshal",
@@ -69,7 +69,7 @@
   "description": "A California man is charged with smuggling after the snakes were intercepted by customs officers.",
   "url": "http://www.bbc.co.uk/news/world-us-canada-40733372",
   "publishedAt": "2017-07-26T17:30:06Z",
-  "category": "Weird, Culture, USA"
+  "category": "Weird"
   },
   {
   "contributor": "Abhimanyu Ghoshal",
@@ -77,7 +77,7 @@
   "description": "The highest court ruled that the community was not adequately consulted on the oil and gas project.",
   "url": "http://www.bbc.co.uk/news/world-us-canada-40677578",
   "publishedAt": "2017-07-26T18:39:59Z",
-  "category": "World, Politics"
+  "category": "Politics"
   },
   {
   "contributor": "Owen Williams",
@@ -85,6 +85,6 @@
   "description": "Divorces often break a heart or two - but in this case, an extra 54 violins were left in tatters.",
   "url": "http://www.bbc.co.uk/news/world-asia-40724397",
   "publishedAt": "2017-07-26T08:22:25Z",
-  "category": "Weird, Relationships, World"
+  "category": "Weird"
   }
 ]
