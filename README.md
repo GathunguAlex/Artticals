@@ -39,7 +39,7 @@ The idea of an Adapter class is that its responsibility is to take data in one f
     **Article Class:**
   - Article#all
     + Class level method that returns all Article instances. When an article instance is initialized, it should be added to the collection of all Article instances.
-3. In the Adapter class, build the `create_objects_from_file` method. This method should use the provided articles to create Article and Category objects.    
+3. In the Adapter class, build the `create_objects_from_file` method. This method should use the provided articles data to create Article and Category objects. It should return the created instances.     
 
 **ONLY BEGIN STEPS 4 AND 5 AFTER COMPLETING THE ABOVE STEPS**
 
@@ -49,4 +49,4 @@ The idea of an Adapter class is that its responsibility is to take data in one f
 
 5. **Article:**
 - Article.find_all_by_category(category)
-  + Takes a category instance as an argument, and returns all articles associated with it
+  + Takes a category instance as an argument, and returns all articles associated with that category

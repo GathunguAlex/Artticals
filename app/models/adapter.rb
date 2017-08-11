@@ -1,7 +1,8 @@
 require 'pry'
 require 'json'
 
-# Adapter.new('newyorker.json').create_objects_from_file
+# In terminal, you should be able to call Adapter.new('newyorker.json').create_objects_from_file and get the created Article objects as a return value
+
 class Adapter
   attr_accessor :file, :articles
 
@@ -15,10 +16,7 @@ class Adapter
   end
 
   def create_objects_from_file
-    @articles.map do |article|
-      category = Category.find_or_create(article["category"])
-      Article.new(article, category)
-    end
+    # create article and category objects here
   end
 
 end
