@@ -15,11 +15,10 @@ class Adapter
   end
 
   def create_objects_from_file
-    @articles.each do |article|
+    @articles.map do |article|
       category = Category.find_or_create(article["category"])
       Article.new(article, category)
     end
-    puts "instances created!!"
   end
 
 end
