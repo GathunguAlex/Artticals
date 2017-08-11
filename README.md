@@ -30,15 +30,17 @@ The idea of an Adapter class is that its responsibility is to take data in one f
 1. Create the relationships between the article and category models. Create initialize methods for each.
    - A category has a name
    - An article has a title, description, url, contributor, and time published
-2. Build Category and Article methods
-  ## Category Class:
+2. Build Category and Article methods:
+
+  ### Category Class:
   - Category.all
     + returns all categories. When a category is initialized, it should be added to an array of all categories.
   - Category#find_or_create
     + This method takes in one argument, which is a string of the category name. The method should create a new instance of a category if one doesn't already exist. Otherwise, it should return the existing category instance.
-   ## Article Class:
+   ### Article Class:
   - Article#all
     + Class level method that returns all Article instances. When an article instance is initialized, it should be added to the collection of all Article instances.
+    
 3. In the Adapter class, build the `create_objects_from_file` method. This method should use the provided articles data to create Article and Category objects. It should return the created instances.     
 
 **ONLY BEGIN STEPS 4 AND 5 AFTER COMPLETING THE ABOVE STEPS**
