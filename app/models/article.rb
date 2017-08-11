@@ -17,4 +17,11 @@ class Article
     @@all
   end
 
+#Article.find_all_by_category("Weird")
+  def self.find_all_by_category(category)
+    Article.all.select do |article|
+      article.category.name = category
+    end
+  end
+
 end
