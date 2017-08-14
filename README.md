@@ -37,8 +37,7 @@ The below are the methods that must be present on your models. Feel free to buil
   - Article.all
     + Class level method that returns all Article instances. When an article instance is initialized, it should be added to the collection of all Article instances.
     
-3. 
-#### Adapter Class:
+3. **Adapter Class:**
    Adapter#create_objects_from_file
    - This method should use the provided articles data to create Article and Category objects. It should return the created instances.     
 
