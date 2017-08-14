@@ -44,7 +44,7 @@ The below are the methods that must be present on your models. Feel free to buil
 
 **ONLY BEGIN STEPS 4 AND 5 AFTER COMPLETING THE ABOVE STEPS**
 
-4. **Category Class: **
+4. **Category Class:**
 - Category.top_category
   + Returns category with the most articles associated with it
 
