@@ -1,6 +1,6 @@
 # Object Relations Assessment
 
-For this assignment, we're going to be working to help New Yorker Magazine organize its articles and contributors into categories for their new website.
+For this assignment, we're going to be working to help New Yorker Magazine organize its articles and categories for their new website.
 
 - An article belongs to a category and a category can have many articles.
 
@@ -25,20 +25,21 @@ The below are the methods that must be present on your models. Feel free to buil
 
 Build the Article and Category classes and their associations, as well as an Adapter class.
 
-The idea of an Adapter class is that its responsibility is to take data in one format and translate it to another format that is easier for the programmer to work with.  Here, the job of our adapter class is to read in data from the given `newyorker.json` file and use that to create Ruby instances with their associations.
+The idea of an Adapter class is that its responsibility is to take data in one format and translate it to another format that is easier for the programmer to work with.  Here, the job of our adapter class is to read in data from the given `newyorker.json` file and use that to create Ruby instances.
 
-1. Create the relationships between the article and category models. Create initialize methods for each.
+1. Create the relationships between the article and category models. Write initialize methods for each.
    - A category has a name
    - An article has a title, description, url, contributor, and time published
+   
 2. Build Category and Article methods:
 
-  ### Category Class:
+  ### Category Class
   - Category.all
     + returns all categories. When a category is initialized, it should be added to an array of all categories.
-  - Category#find_or_create
+  - Category.find_or_create
     + This method takes in one argument, which is a string of the category name. The method should create a new instance of a category if one doesn't already exist. Otherwise, it should return the existing category instance.
    ### Article Class:
-  - Article#all
+  - Article.all
     + Class level method that returns all Article instances. When an article instance is initialized, it should be added to the collection of all Article instances.
     
 3. In the Adapter class, build the `create_objects_from_file` method. This method should use the provided articles data to create Article and Category objects. It should return the created instances.     
