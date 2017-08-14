@@ -8,7 +8,7 @@
 + Arrays and Array Methods
 + Class Methods
 
-For this assignment, we're going to be working to help New Yorker Magazine organize its articles and categories for their new website. **An article belongs to a category and a category can have many articles**
+For this assignment, we're going to be helping New Yorker Magazine organize its articles and categories for their new website. We'll create an adapter class to import json data and convert it into article and category class instances. **An article belongs to a category and a category can have many articles**
 
 ## Notes
 
