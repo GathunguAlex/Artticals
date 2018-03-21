@@ -1,52 +1,53 @@
 # Object Relations Assessment
 
-## Topics
+For this assignment, you will be creating a domain to track contributions that Authors make to Magazines. For the purposes of this lab, an Author has many Articles, a Magazine has many Articles, and Articles belong to both Author and Magazine.
 
-+ Classes vs Instances
-+ Variable Scope ( Class, Instance, Local )
-+ Object Relationships
-+ Arrays and Array Methods
-+ Class Methods
+Note: It can be incredibly helpful to draw out what your domain will look like before you start coding.
 
 For this assignment, we're going to be helping New Yorker Magazine organize its articles and categories for their new website. We'll create an adapter class to import json data and convert it into article and category class instances. **An article belongs to a category and a category can have many articles**
 
-## Notes
+Your goal is to build out all of the methods listed below in 'deliverables'. Do your best to follow Ruby best practices. For example, use higher-level array methods such as `map`, `select`, and `find` when appropriate.
 
 We've provided you with a console that you can use to test your code. To enter a console session, run `ruby tools/console.rb`. You'll be able to test out the methods that you write here.
 
-The idea of an Adapter class is that its responsibility is to take data in one format and translate it to another format that is easier for the programmer to work with.  Here, the job of our adapter class is to read in data from the given `newyorker.json` file and use that to create Ruby instances.
+  --  Make sure you are testing your code as you go! --
 
 **To Submit** - once you've completed all the deliverables, please copy/paste your three class definitions into the `solution.rb` file. Please don't submit the lab until we give you the signal.
 
 #### Instructions
 
 The below are the methods that must be present on your models. Feel free to build out any helper methods, if needed.
+## Deliverables
 
-1. Build the Article and Category classes and their associations. Write initialize methods for each.
-   - A category has a name
-   - An article has a title, description, url, contributor, and time published
-   
-2. Build Category and Article methods:
+Build the following methods on the Author class
 
-  #### Category Class
-  - Category.all
-    + returns all categories. When a category is initialized, it should be added to an array of all categories.
-  - Category.find_or_create
-    + This method takes in one argument, which is a string of the category name. The method should create a new instance of a category if one doesn't already exist. Otherwise, it should return the existing category instance.
-   #### Article Class:
-  - Article.all
-    + Class level method that returns all Article instances. When an article instance is initialized, it should be added to the collection of all Article instances.
-    
-3. **Adapter Class:**
-   Adapter#create_objects_from_file
-   - This method should use the provided articles data to create Article and Category objects. It should return the created instances.     
++ Author.all
+  + should return all of the authors
++ Author#articles
+  + returns a list of articles the author has written
++ Author#magazines
+  + should return a list of magazines for which the author has written
++ Author.find_oldest
+  + returns the oldest author
++ Author#add_article(title, magazine)
+  + given a title and a magazine, creates a new article and associates it with that magazine.
++  Author#find_specialties
+  + returns the categories of the magazines for which the author has written
 
-**ONLY BEGIN STEPS 4 AND 5 AFTER COMPLETING THE ABOVE STEPS**
+Build out the following methods on the Article class
 
-4. **Category Class:**
-- Category.top_category
-  + Returns category with the most articles associated with it
++ Article.all
+  + returns all of the articles
++ Article#author
+  + returns the author for that given article
++ Article#magazine
+  + returns the restaurant for that given article
 
-5. **Article Class:**
-- Article.find_all_by_category(category)
-  + Takes a category instance as an argument, and returns all articles associated with that category
+Build out the following methods on the restaurant class
+
++ Magazine.all
+  + returns an array of all magazines
++ Magazine.find_by_name(name)
+  + given a string of magazine name, returns the first magazine that matches
++ Magazine#article_names
+  + returns a list of the names of all articles written for that magazine
