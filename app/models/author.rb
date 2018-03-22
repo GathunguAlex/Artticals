@@ -1,11 +1,10 @@
 class Author
-  attr_accessor :name, :age
+  attr_accessor :name
 
 
-  def initialize(name, age)
+  def initialize(name)
     @name = name
-    @age = age
-
+  
   end
 
 
