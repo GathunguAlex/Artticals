@@ -40,7 +40,7 @@ Build out the following methods on the Article class
 + Article#magazine
   + returns the restaurant for that given article
 
-Build out the following methods on the restaurant class
+Build out the following methods on the Magazine class
 
 + Magazine.all
   + returns an array of all magazines
