@@ -29,7 +29,7 @@ Build the following methods on the Author class
 + Author#add_article(title, magazine)
   + given a title and a magazine, creates a new article and associates it with that author and that magazine.
 +  Author#find_specialties
-  + returns the categories of the magazines for which the author has written
+   + returns the categories of the magazines for which the author has written
 
 Build out the following methods on the Article class
 
