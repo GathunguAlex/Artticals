@@ -21,7 +21,7 @@ The below are the methods that must be present on your models. Feel free to buil
 Build the following methods on the Author class
 
 + Author.all
-  + should return all of the authors
+  + returns an array of all authors
 + Author#articles
   + returns a list of articles the author has written
 + Author#magazines
@@ -34,11 +34,11 @@ Build the following methods on the Author class
 Build out the following methods on the Article class
 
 + Article.all
-  + returns all of the articles
+  + returns an array of all articles
 + Article#author
   + returns the author for that given article
 + Article#magazine
-  + returns the restaurant for that given article
+  + returns the magazine for that given article
 
 Build out the following methods on the Magazine class
 
