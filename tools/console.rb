@@ -4,4 +4,10 @@ def reload
   load 'config/environment.rb'
 end
 
-Pry.start
+
+###  WRITE YOUR TEST CODE HERE ###
+
+
+binding.pry
+
+0
