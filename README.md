@@ -18,33 +18,38 @@ The below are the methods that must be present on your models. Feel free to buil
 
 ## Deliverables
 
-Build the following methods on the Author class
+### Author
+An author is initialized with a name as a string. A name **cannot** be changed after it is initialized.
 
-+ Author.all
-  + returns an array of all authors
-+ Author#articles
-  + returns a list of articles the author has written
-+ Author#magazines
-  + should return a list of magazines for which the author has written  
-+ Author#add_article(title, magazine)
-  + given a title and a magazine, creates a new article and associates it with that author and that magazine.
-+  Author#find_specialties
-   + returns the categories of the magazines for which the author has written
++ `Author#name`
+  + Returns the name of the author as a string
++ `Author.all`
+  + Returns an array of all Author instances
++ `Author#add_article(title, magazine)`
+  + Given a title (as a string) and a magazine (as Magazine instance), this method creates a new Article instance and associates it with that author and that magazine.
++ `Author#articles`
+  + Returns an array of Article instances the author has written
++ `Author#magazines`
+  + Returns an array of Magazine instances for which the author has contributed to
++  `Author#show_specialties`
+  + Returns an array of categories of the magazines for which the author has contributed to
 
-Build out the following methods on the Article class
+### Article
+An article is initialized with an author as an Author object and a magazine as a Magazine object. An article **cannot** change its author or magazine after it is has been initialized. 
 
-+ Article.all
-  + returns an array of all articles
-+ Article#author
-  + returns the author for that given article
-+ Article#magazine
-  + returns the magazine for that given article
++ `Article.all`
+  + Returns an array of all Article instances
++ `Article#author`
+  + Returns the author for that given article
++ `Article#magazine`
+  + Returns the magazine for that given article
 
-Build out the following methods on the Magazine class
+### Magazine
+A magazine is initialized with a name as a string and a category as a string. The name of the magazine and the category it falls under **can be** changed after being initialized.
 
 + Magazine.all
-  + returns an array of all magazines
+  + Returns an array of all Magazine instances
 + Magazine.find_by_name(name)
-  + given a string of magazine name, returns the first magazine that matches
+  + Given a string of magazine's name, this method returns the first magazine object that matches
 + Magazine#article_titles
-  + returns a list of the titles of all articles written for that magazine
+  + Returns an array of the titles of all articles written for that magazine
