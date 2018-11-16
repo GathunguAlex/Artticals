@@ -45,7 +45,7 @@ An article is initialized with an author as an Author object and a magazine as a
   + Returns the magazine for that given article
 
 ### Magazine
-A magazine is initialized with a name as a string and a category as a string. The name of the magazine and the category it falls under **can be** changed after being initialized.
+A magazine is initialized with a name as a string and a category as a string. The name of the magazine and the category of the magazine **can be** changed after being initialized.
 
 + `Magazine#name`
   + Returns the name of this magazine
