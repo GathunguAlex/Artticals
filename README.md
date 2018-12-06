@@ -31,8 +31,10 @@ An author is initialized with a name as a string. A name **cannot** be changed a
   + Returns an array of Article instances the author has written
 + `Author#magazines`
   + Returns an array of Magazine instances for which the author has contributed to
-+  `Author#show_specialties`
++ `Author#show_specialties`
   + Returns an array of categories of the magazines for which the author has contributed to
+
+
 
 ### Article
 An article is initialized with an author as an Author object and a magazine as a Magazine object. An article **cannot** change its author or magazine after it is has been initialized. 
