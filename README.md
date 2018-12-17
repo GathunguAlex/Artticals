@@ -1,6 +1,6 @@
 # Object Relations Code Challenge
 
-For this assignment, you will be creating a domain to track contributions that authors make to magazines. For our purposes, an `Author` has many `Articles`, a `Magazine` has many `Articles`, and `Articles` belong to both `Author` and `Magazine`.
+For this assignment, you will be creating a domain to track contributions that authors make to magazines. For our purposes, an `Author` has many `Article`s, a `Magazine` has many `Article`s, and `Article`s belong to both `Author` and `Magazine`.
 
 _Note:_ It can be incredibly helpful to draw out what your domain will look like before you start coding. If you are not sketching out your domain, and thinking about single source of truth, you are doing it wrong :(
 
