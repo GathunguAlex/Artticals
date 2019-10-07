@@ -34,76 +34,81 @@ Do your best to follow Ruby best practices. For example, use higher-level array 
 
 Write the following methods in the classes in the files provided. Feel free to build out any helper methods if needed.
 
-### Basic Class Methods and Properties
+Deliverables use the notation `#` for instance methods, and `.` for class methods.
 
-#### Build the following methods on the `Author` class
+Some of the methods listed are provided to you in the starter code. You should check that they work correctly, and that you understand them.
 
-An author is initialized with a name as a string. A name **cannot** be changed after it is initialized.
+### Initializers, Readers, and Writers
 
+#### Author
+
+- `Author.initialize(name)`
+  - An author is initialized with a name, as a string.
 - `Author#name`
-  - Returns the name of the author as a string
-- `Author.all`
-  - Returns an array of all Author instances
+  - Returns the name of the author
+  - A name **cannot** be changed after it is initialized.
 
----
+#### Magazine
 
-#### Build the following methods on the `Article` class
+- `Magazine.initialize(name, category)`
+  - A magazine is initialized with a name as a string and a category as a string
+- `Magazine#name`
+  - Returns the name of this magazine
+  - The name of the magazine **can be** changed after being initialized.
+- `Magazine#category`
+  - Returns the category of this magazine
+  - The category of the magazine **can be** changed after being initialized.
+- `Magazine.all`
+  - Returns an array of all Magazine instances
 
-An article is initialized with an author as an Author object, a magazine as a Magazine object, title as a string, and content as a string. An article **cannot** change its author or magazine after it is has been initialized.
+#### Article
 
-- `Article.all`
-  - Returns an array of all Article instances
-- `Article#author`
-  - Returns the author for that given article
-- `Article#magazine`
-  - Returns the magazine for that given article
+- `Article.initialize(author, magazine, title, content)`
+  - An article is initialized with an author as an Author object, a magazine as a Magazine object, title as a string, and content as a string.
+  - An article **cannot** change its author, magazine, title, or content after it is has been initialized.
 - `Article#title`
   - Returns the title for that given article
 - `Article#content`
   - Returns the content for that given article
+- `Article.all`
+  - Returns an array of all Article instances
 
----
+### Object Relationship Methods
 
-#### Build the following methods on the `Magazine` class
+#### Article
 
-A magazine is initialized with a name as a string and a category as a string. The name of the magazine and the category of the magazine **can be** changed after being initialized.
+- `Article#author`
+  - Returns the author for that given article
+- `Article#magazine`
+  - Returns the magazine for that given article
 
-- `Magazine#name`
-  - Returns the name of this magazine
-- `Magazine#category`
-  - Returns the category of this magazine
-- `Magazine.all`
-  - Returns an array of all Magazine instances
-- `Magazine.find_by_name(name)`
-  - Given a string of magazine's name, this method returns the first magazine object that matches
+#### Author
 
----
-
-### Associations and Aggregate Methods
-
-#### `Author`
-
-- `Author#add_article(magazine, title, content)`
-  - Given a magazine (as Magazine instance), a title (as a string), and content (as a string), this method creates a new Article instance and associates it with that author and that magazine.
 - `Author#articles`
   - Returns an array of Article instances the author has written
 - `Author#magazines`
   - Returns a **unique** array of Magazine instances for which the author has contributed to
-- `Author#show_specialties`
-  - Returns a **unique** array of categories of the magazines for which the author has contributed to
-- `Author.most_active`
-  - Returns the Author instance who has written the greatest number of articles
-- `Author.most_verbose`
-  - Returns the Author instance who has the longest article by word count
 
-#### `Magazine`
+#### Magazine
 
-- `Magazine#article_titles`
-  - Returns an array of the titles of all articles written for that magazine
 - `Magazine#contributors`
   - Returns an array of Author instances who have written for this magazine
-- `Magazine#word_count`
-  - Returns a number that is the total number of words for all of the articles in this magazine
+
+### Associations and Aggregate Methods
+
+#### Author
+
+- `Author#add_article(magazine, title, content)`
+  - Given a magazine (as Magazine instance), a title (as a string), and content (as a string), creates a new Article instance and associates it with that author and that magazine.
+- `Author#topic_areas`
+  - Returns a **unique** array of strings with the categories of the magazines the author has contributed to
+
+#### Magazine
+
+- `Magazine.find_by_name(name)`
+  - Given a string of magazine's name, this method returns the first magazine object that matches
+- `Magazine#article_titles`
+  - Returns an array of the titles of all articles written for that magazine
 
 ## Rubric
 
