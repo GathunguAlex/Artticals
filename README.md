@@ -44,20 +44,19 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 - `Author#initialize(name)`
   - An author is initialized with a name, as a string.
+  - A name **cannot** be changed after it is initialized.
 - `Author#name`
   - Returns the name of the author
-  - A name **cannot** be changed after it is initialized.
 
 #### Magazine
 
 - `Magazine#initialize(name, category)`
   - A magazine is initialized with a name as a string and a category as a string
+  - The name and category of the magazine **can be** changed after being initialized.
 - `Magazine#name`
   - Returns the name of this magazine
-  - The name of the magazine **can be** changed after being initialized.
 - `Magazine#category`
   - Returns the category of this magazine
-  - The category of the magazine **can be** changed after being initialized.
 - `Magazine.all`
   - Returns an array of all Magazine instances
 
