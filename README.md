@@ -42,7 +42,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Author
 
-- `Author.initialize(name)`
+- `Author#initialize(name)`
   - An author is initialized with a name, as a string.
 - `Author#name`
   - Returns the name of the author
@@ -50,7 +50,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Magazine
 
-- `Magazine.initialize(name, category)`
+- `Magazine#initialize(name, category)`
   - A magazine is initialized with a name as a string and a category as a string
 - `Magazine#name`
   - Returns the name of this magazine
@@ -63,7 +63,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Article
 
-- `Article.initialize(author, magazine, title, content)`
+- `Article#initialize(author, magazine, title, content)`
   - An article is initialized with an author as an Author object, a magazine as a Magazine object, title as a string, and content as a string.
   - An article **cannot** change its author, magazine, title, or content after it is has been initialized.
 - `Article#title`
