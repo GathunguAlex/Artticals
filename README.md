@@ -63,13 +63,11 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Article
 
-- `Article#initialize(author, magazine, title, content)`
-  - An article is initialized with an author as an Author object, a magazine as a Magazine object, title as a string, and content as a string.
-  - An article **cannot** change its author, magazine, title, or content after it is has been initialized.
+- `Article#initialize(author, magazine, title)`
+  - An article is initialized with an author as an Author object, a magazine as a Magazine object, and title as a string.
+  - An article **cannot** change its author, magazine, or title after it is has been initialized.
 - `Article#title`
   - Returns the title for that given article
-- `Article#content`
-  - Returns the content for that given article
 - `Article.all`
   - Returns an array of all Article instances
 
@@ -98,8 +96,8 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Author
 
-- `Author#add_article(magazine, title, content)`
-  - Given a magazine (as Magazine instance), a title (as a string), and content (as a string), creates a new Article instance and associates it with that author and that magazine.
+- `Author#add_article(magazine, title)`
+  - Given a magazine (as Magazine instance) and a title (as a string), creates a new Article instance and associates it with that author and that magazine.
 - `Author#topic_areas`
   - Returns a **unique** array of strings with the categories of the magazines the author has contributed to
 
