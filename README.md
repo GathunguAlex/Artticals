@@ -40,7 +40,9 @@ Write the following methods in the classes in the files provided. Feel free to b
 
 Deliverables use the notation `#` for instance methods, and `.` for class methods.
 
-Some of the methods listed are provided to you in the starter code. You should check that they work correctly, and that you understand them.### Initializers, Readers, and Writers
+Some of the methods listed are provided to you in the starter code. You should check that they work correctly, and that you understand them.
+
+### Initializers, Readers, and Writers
 
 #### Author
 
@@ -107,7 +109,9 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Magazine.find_by_name(name)`
   - Given a string of magazine's name, this method returns the first magazine object that matches
 - `Magazine#article_titles`
-  - Returns an array of the titles of all articles written for that magazine
+  - Returns an array strings of the titles of all articles written for that magazine
+- `Magazine#contributing_authors`
+  - Returns an array of authors who have written more than 2 articles for the magazine
 
 ## Rubric
 
