@@ -14,12 +14,38 @@ class Magazine
   def self.all
    @@all
   end
-
+  
+  def magazine_articles
+  
+  Article.all.filter{|article|article.magazine.name==@name}
+  end
+ 
+  def magazine_authors 
+  magazine_articles.map{|article|article.author}
+  end
+  
   #This filters articles that match{article|article.magazine.name==true}
   #then .map{||article|article.author.name}.unique
  def contributors
-Article.all.filter{|article|article.magazine.name==@name}.map{|article|article.author}.uniq
+  magazine_authors.uniq
+
 end
 
+def  self.find_by_name(name)
+  Magazine.all.find{|magazine|magazine.name==name}
+end
+
+def article_titles 
+  magazine.articles.map{|article|article.title}
+
+end
+
+def contributing_authors 
+  #filtering all authors with more than two articles 
+  main_authors =[]
+  magazine_articles.tally.each{|key,value|value>2&&(main_authors<<key)}
+  main_authors
+
+end
 
 end
