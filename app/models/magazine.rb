@@ -14,4 +14,12 @@ class Magazine
   def self.all
    @@all
   end
+
+  #This filters articles that match{article|article.magazine.name==true}
+  #then .map{||article|article.author.name}.unique
+ def contributors
+Article.all.filter{|article|article.magazine.name==@name}.map{|article|article.author}.uniq
+end
+
+
 end
