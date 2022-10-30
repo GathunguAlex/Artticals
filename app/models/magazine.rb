@@ -1,6 +1,6 @@
 class Magazine
-  attr_accessor :name, :category
-
+  attr_reader :name, :category
+#change from accessor to reader to make sure it cannot be changes
 
   def initialize(name, category)
     @name = name
